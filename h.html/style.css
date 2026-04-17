@@ -1,0 +1,96 @@
+
+/* style.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Более современный шрифт */
+  background-color: #f8f0fc; /* Очень светлый розово-сиреневый фон */
+  color: #5a005a; /* Темно-фиолетовый цвет текста */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Минимальная высота экрана */
+  text-align: center;
+}
+
+.container {
+  background-color: #ffffff; /* Белый фон для контейнера */
+  padding: 40px 30px;
+  border-radius: 15px; /* Скругленные углы */
+  box-shadow: 0 10px 30px rgba(173, 216, 230, 0.5); /* Светло-голубая тень */
+  max-width: 600px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #ff69b4; /* Ярко-розовый заголовок */
+  margin-bottom: 20px;
+}
+
+p {
+  color: #c71585; /* Средне-розовый цвет для параграфов */
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+/* Стиль для кнопки */
+#redirectButton {
+  background-color: #ffb6c1; /* Светло-розовый цвет кнопки */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+  font-weight: bold;
+  text-transform: uppercase; /* Заглавные буквы */
+}
+
+#redirectButton:hover {
+  background-color: #ff1493; /* Более темный розовый при наведении */
+  transform: translateY(-3px); /* Небольшой подъем кнопки */
+}
+
+/* Стиль для сердечек */
+.heart {
+  font-size: 3em; /* Большой размер сердечка */
+  color: #ff69b4; /* Ярко-розовый цвет */
+  margin: 20px 0;
+  animation: beat 1.2s infinite alternate; /* Анимация пульсации */
+}
+
+/* Анимация пульсации */
+@keyframes beat {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15); /* Немного увеличиваем */
+  }
+}
+
+/* Стиль для отображения GIF */
+.gif-display img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Скругленные углы у GIF */
+  margin-top: 10px;
+  border: 5px solid #ffc0cb; /* Нежная розовая рамка */
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.5); /* Розовая тень */
+}
+
+/* Стиль для ссылки "Вернуться назад" */
+.back-link {
+  margin-top: 30px;
+  font-size: 1.1em;
+  color: #da70d6; /* Орхидейный цвет */
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,31 @@
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розовый Сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Только не нажимай</h1>
+
+        <div class="heart">❤️</div> <!-- Сердечко на главной -->
+
+        <p> ты правда готов нажать?</p>
+
+        <button id="redirectButton">Нажми на меня</button>
+    </div>
+
+    <script>
+        // JavaScript для перенаправления при нажатии кнопки
+        document.getElementById('redirectButton').addEventListener('click', function() {
+            window.location.href = 'gif_page.html';
+        });
+    </script>
+
+</body>
+</html>
